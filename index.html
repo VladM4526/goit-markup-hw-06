@@ -39,10 +39,79 @@
             <button class="webstudio-service-button" type="button" data-modal-open>Order Service</button>
             <div class="webstudio-modal-overlay is-hidden" data-modal>
                 <div class="webstudio-modal-window">
-                    <div class="webstudio-modal-window-close-button" data-modal-close>
+                    <button class="webstudio-modal-window-close-button" data-modal-close>
                         <svg class="webstudio-modal-window-icon">
                             <use href="./images/close-button-svg.svg#icon-close-button" width="8"></use>
                         </svg>
+                    </button>
+                    <div class="webstudio-modal-form">
+                        <h1 class="webstudio-modal-form-title">Leave your contacts and we will call you back</h1>
+
+                        <form class="webstudio-modal-form-data" method="POST" action="javascript:void(0);" autocomplete="off">
+                            <ul class="webstudio-modal-form-data-name-list">
+                                <div class="webstudio-modal-form-data-name">
+                                    <li class="webstudio-modal-form-data-item">
+                                        <label class="webstudio-modal-form-data-label">
+                                        <span class="webstudio-modal-form-data-title">Name</span> 
+                                            <div class="webstudio-modal-form-data-container">
+                                                <svg class="webstudio-modal-form-data-icon">
+                                                    <use href="./images/set-icon-for-form-data.svg#icon-form-order-name"></use>
+                                                </svg>
+                                                <input class="webstudio-modal-form-item" type="name" name="name">
+                                            </div>  
+                                        </label>
+                                    </li>
+                                    <li class="webstudio-modal-form-data-item">
+                                        <label class="webstudio-modal-form-data-label">
+                                            <span class="webstudio-modal-form-data-title">Phone</span>
+                                            <div class="webstudio-modal-form-data-container">
+                                                <svg class="webstudio-modal-form-data-icon">
+                                                    <use href="./images/set-icon-for-form-data.svg#icon-form-order-call"></use>
+                                                </svg>
+                                                <input class="webstudio-modal-form-item" type="phone" name="phone">
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="webstudio-modal-form-data-item">
+                                        <label class="webstudio-modal-form-data-label">
+                                            <span class="webstudio-modal-form-data-title">Email</span>
+                                            <div class="webstudio-modal-form-data-container">
+                                                <svg class="webstudio-modal-form-data-icon">
+                                                    <use href="./images/set-icon-for-form-data.svg#icon-form-order-email"></use>
+                                                </svg>
+                                                <input class="webstudio-modal-form-item" type="email" name="email">
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="webstudio-modal-form-data-item">
+                                        <label class="webstudio-modal-form-data-label">
+                                            <span class="webstudio-modal-form-data-title">Comment</span>
+                                            <div class="webstudio-modal-form-data-container">
+                                                <textarea class="webstudio-modal-form-item-comment" name="comment" placeholder="Text input"></textarea>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="webstudio-modal-form-data-item">
+                                        <div class="webstudio-modal-form-data-item-container">
+                                            <label class="webstudio-modal-form-data-label">
+                                                <input class="webstudio-modal-form-item-checkbox" type="checkbox" name="checkbox">
+                                            </label>
+                                            <span class="webstudio-modal-form-data-title-checkbox">I accept the terms and conditions of the <a class="webstudio-modal-form-data-title-rules" href="">Privacy Policy</a></span>
+                                        </div>
+                                            <div class="webstudio-modal-form-data-container">
+                                                <!-- <svg class="webstudio-modal-form-data-icon">
+                                                    <use href="./images/set-icon-for-form-data.svg#icon-form-order-email"></use>
+                                                </svg> -->
+                                            </div>
+                                    </li>
+                                    <li class="webstudio-modal-form-data-item">
+                                        <div class="webstudio-modal-form-data-item-button-container">
+                                            <button class="webstudio-modal-form-data-item-button" type="submit">Send</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -308,7 +377,7 @@
     </main>
 
     <footer class="webstudio-footer-home">
-        <div class="webstudio-footer-container">
+        <div class="webstudio-footer-home-container">
             <div class="webstudio-footer-container-text">
                 <a class="webstudio-footer-logo" href="./index.html"><span class="webstudio-footer-link-color">WEB</span>STUDIO</a>
                 <p class="webstudio-footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -346,10 +415,17 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <form action="GET">
-                    <label for="Subscribe">Subscribe</label>
-                    <input type="text" name="email" placeholder="E-mail">
+            <div class="webstudio-footer-form-subscribe-container">
+                <form class="webstudio-footer-form-subscribe-form" method="POST" action="javascript:void(0);" autocomplete="off">
+                    <label class="webstudio-footer-form-subscribe-label">Subscribe</label>
+                    <div class="webstudio-footer-form-subscribe-input-button-container">
+                        <input class="webstudio-footer-form-subscribe-input" type="text" name="email" placeholder="E-mail">
+                        <button class="webstudio-footer-form-subscribe-button" type="submit">Subscribe
+                            <svg class="webstudio-footer-form-subscribe-svg-icon">
+                                <use href="./images/message-icon.svg#icon-message-icon" ></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
