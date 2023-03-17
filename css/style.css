@@ -397,6 +397,7 @@
     width: 16px;
     height: 16px;
     border: 1px solid var(--Dark);
+    cursor: pointer;
 }
 
 .webstudio-modal-form-input-checkbox-icon {
